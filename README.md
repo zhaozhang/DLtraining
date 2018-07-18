@@ -31,7 +31,7 @@ pip install --user /scratch/00946/zzhang/stampede2/tensorflow/build/tensorflow-1
 pip install --user keras==2.1.6
 ```
 
-#Install Horovod
+## Install Horovod
 ```
 pip install --user horovod==0.13.0
 ```
