@@ -7,6 +7,10 @@
 #SBATCH -t 01:00:00        # run time (hh:mm:ss) - 4 hours
 #SBATCH -A Intel-TensorFlow    #TG-CCR150011    # project name
 
+export OMP_NUM_THREADS=64
+export KMP_BLOCKTIME=0
+export KMP_SETTINGS=1
+export KMP_AFFINITY=granularity=fine,verbose,compact,1,0
 module load phdf5
 
 mkdir -p /tmp/keras
