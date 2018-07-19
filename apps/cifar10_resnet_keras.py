@@ -300,7 +300,7 @@ def resnet_v2(input_shape, depth, num_classes=10):
 if __name__ == '__main__':
     # Training parameters
     batch_size = 128  # orig paper trained all networks with batch_size=128
-    epochs = 200
+    epochs = 5 # 200
     data_augmentation = True
     num_classes = 10
 

@@ -3,9 +3,9 @@
 #SBATCH -o Cifar10-4node.out         # output and error file name (%j expands to jobID)
 #SBATCH -N 4              # total number of nodes
 #SBATCH -n 4
-#SBATCH -p flat-quadrant           # queue (partition) -- normal, development, etc.
+#SBATCH -p normal           # queue (partition) -- normal, development, etc.
 #SBATCH -t 01:00:00        # run time (hh:mm:ss) - 4 hours
-#SBATCH -A Intel-TensorFlow    #TG-CCR150011    # project name
+#SBATCH -A TRAINING-OPEN    #TG-CCR150011    # project name
 
 export OMP_NUM_THREADS=64
 export KMP_BLOCKTIME=0
